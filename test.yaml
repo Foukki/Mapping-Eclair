@@ -15,14 +15,16 @@ azure: &azure
   stroke: "#A8A8AA"
   icon: "gateway"
 icons:
-  D3: {<<: *azure, x: 3, y: 3, icon: "serverrack"}
-  gateway1: {<<: *azure, x: 0, y: 6, icon: "gateway"}
-  gateway2: {<<: *azure, x: "+1"}
-  gateway3: {<<: *azure, x: "+1"}
+  D3: {<<: *azure, x: 2, y: 3, icon: "serverrack"}
+  D4: {<<: *azure, x: 3, y: 3, icon: "serverrack"}
+
+  D3_05: {<<: *azure, x: 0, y: 6, icon: "plugandplay"}
+  D3_06: {<<: *azure, x: 1, y: 6, icon: "plugandplay"}
 
 connection: &connection
   color: "#A8A8AA"
   stroke: "#A8A8AA"
 connections:
-  - { <<: *connection, endpoints: ["D3:lable 1 here", "gateway1:label 2 here"] }
+  - { <<: *connection, endpoints: ["D3", "D3_05"] }
+  - { <<: *connection, endpoints: ["D3", "D3_06"] }
   
