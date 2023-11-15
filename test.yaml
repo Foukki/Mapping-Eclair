@@ -31,10 +31,12 @@ group: &group
   fill: "none"
   color: "black"
   stroke: "#A8A8AA"
+  text: "#1"
 
 groups:
-  SDEC: { <<: *group, textLocation: bottomMiddle, name: SDEC, members: [D3_05, D3_06] }
-  ECLAIR: { <<: *group, textLocation: bottomMiddle, name: ECLAIR, members: [D3_11, D3_12, D3_13, D3_14, D3_15] }
+  SDEC: { <<: *group, textLocation: topMiddle, name: SDEC, members: [D3_05, D3_06] }
+  ECLAIR: { <<: *group, textLocation: topMiddle, name: ECLAIR, members: [D3_11, D3_12, D3_13, D3_14, D3_15] }
+  BDE: { <<: *group, textLocation: topMiddle, name: BDE, members: [D3_10] }
   
 connection: &connection
   color: "#A8A8AA"
@@ -43,4 +45,10 @@ connection: &connection
 connections:
   - { <<: *connection, endpoints: ["D3", "D3_05"] }
   - { <<: *connection, endpoints: ["D3", "D3_06"] }
+  - { <<: *connection, endpoints: ["D3", "D3_10"] }
+  - { <<: *connection, endpoints: ["D3", "D3_11"] }
+  - { <<: *connection, endpoints: ["D3", "D3_12"] }
+  - { <<: *connection, endpoints: ["D3", "D3_13"] }
+  - { <<: *connection, endpoints: ["D3", "D3_14"] }
+  - { <<: *connection, endpoints: ["D3", "D3_15"] }
   
