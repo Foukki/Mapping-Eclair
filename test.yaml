@@ -58,9 +58,9 @@ connection: &connection
   stroke: "#A8A8AA"
   strokeWidth: 3
 connections:
-  - { <<: *connection, endpoints: ["D3", "D3_05"] }
+  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_05"] }
   - { <<: *connection, endpoints: ["D3", "D3_06"] }
-  - { <<: *connection, endpoints: ["D3", "D3_10"] }
+  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_10"] }
   - { <<: *connection, endpoints: ["D3", "D3_11"] }
   - { <<: *connection, endpoints: ["D3", "D3_12"] }
   - { <<: *connection, endpoints: ["D3", "D3_13"] }
@@ -71,7 +71,7 @@ connections:
   - { <<: *connection, endpoints: ["D3", "D3_20"] }
   - { <<: *connection, endpoints: ["D3", "D3_22"] }
   - { <<: *connection, endpoints: ["D3", "D3_23"] }
-  - { <<: *connection, endpoints: ["D3", "D3_24"] }
+  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_24"] }
   - { <<: *connection, endpoints: ["D4", "D4_18"] }
   - { <<: *connection, endpoints: ["D4", "D4_23"] }
   
