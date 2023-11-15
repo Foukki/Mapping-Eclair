@@ -24,6 +24,7 @@ icons:
 connection: &connection
   color: "#A8A8AA"
   stroke: "#A8A8AA"
+  strokeWidth: 3
 connections:
   - { <<: *connection, endpoints: ["D3", "D3_05"] }
   - { <<: *connection, endpoints: ["D3", "D3_06"] }
