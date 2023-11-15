@@ -1,7 +1,7 @@
 diagram:
   fill: "linen"
-  rows: 7
-  columns: 7
+  rows: 8
+  columns: 8
   gridLines: false
 title:
   text: Labels
@@ -20,7 +20,22 @@ icons:
 
   D3_05: {<<: *azure, x: 0, y: 6, icon: "plugandplay"}
   D3_06: {<<: *azure, x: 1, y: 6, icon: "plugandplay"}
+  D3_10: {<<: *azure, x: 2, y: 6, icon: "plugandplay"}
+  D3_11: {<<: *azure, x: 3, y: 6, icon: "plugandplay"}
+  D3_12: {<<: *azure, x: 4, y: 6, icon: "plugandplay"}
+  D3_13: {<<: *azure, x: 5, y: 6, icon: "plugandplay"}
+  D3_14: {<<: *azure, x: 6, y: 6, icon: "plugandplay"}
+  D3_15: {<<: *azure, x: 7, y: 6, icon: "plugandplay"}
 
+group: &group
+  fill: "none"
+  color: "black"
+  stroke: "#A8A8AA"
+
+groups:
+  SDEC: { <<: *group, textLocation: bottomMiddle, name: SDEC, members: [D3_05, D3_06] }
+  ECLAIR: { <<: *group, textLocation: bottomMiddle, name: ECLAIR, members: [D3_11, D3_12, D3_13, D3_14, D3_15] }
+  
 connection: &connection
   color: "#A8A8AA"
   stroke: "#A8A8AA"
