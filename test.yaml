@@ -1,5 +1,5 @@
 diagram:
-  fill: "#006241"
+  fill: "linen"
   rows: 7
   columns: 7
   gridLines: false
@@ -15,7 +15,8 @@ azure: &azure
   stroke: "#A8A8AA"
   icon: "gateway"
 icons:
-  internet: {<<: *azure, x: 3, y: 3, icon: "internet"}
+  D3 : {<<: *azure, x: 3, y: 3, icon: "internet"}
+  D4 : {<<: *azure, x: 3, y: 3, icon: "internet"}
   gateway1: {<<: *azure, x: 0, y: 6, icon: "gateway"}
   gateway2: {<<: *azure, x: "+1"}
   gateway3: {<<: *azure, x: "+1"}
