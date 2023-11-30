@@ -17,7 +17,10 @@ azure: &azure
 icons:
   D3: {<<: *azure, x: 3, y: 3, icon: "serverrack"}
   D4: {<<: *azure, x: 4, y: 3, icon: "serverrack"}
-
+  
+  D3_02: {<<: *azure, x: 4, y: 0, icon: "plugandplay"}
+  D3_03: {<<: *azure, x: 5, y: 0, icon: "plugandplay"}
+  D3_04: {<<: *azure, x: 6, y: 0, icon: "plugandplay"}
   D3_05: {<<: *azure, x: 0, y: 0, icon: "plugandplay"}
   D3_06: {<<: *azure, x: 0, y: 1, icon: "plugandplay"}
   D3_10: {<<: *azure, x: 0, y: 2, icon: "plugandplay"}
@@ -32,6 +35,8 @@ icons:
   D3_22: {<<: *azure, x: 3, y: 0, icon: "plugandplay"}
   D3_23: {<<: *azure, x: 0, y: 3, icon: "plugandplay"}
   D3_24: {<<: *azure, x: 0, y: 4, icon: "plugandplay"}
+  D4_16: {<<: *azure, x: 6, y: 4, icon: "plugandplay"}
+  D4_17: {<<: *azure, x: 6, y: 3, icon: "plugandplay"}
   D4_18: {<<: *azure, x: 6, y: 6, icon: "plugandplay"}
   D4_23: {<<: *azure, x: 6, y: 5, icon: "plugandplay"}
 
@@ -52,26 +57,35 @@ groups:
   REUNION: { <<: *group, textLocation: topMiddle, name: REUNION, members: [D3_16] }
   PIXEL: { <<: *group, textLocation: topMiddle, name: PIXEL, members: [D4_18] }
   COULOIR: { <<: *group, textLocation: topMiddle, name: COULOIR, members: [D4_23] }
+  RAID: { <<: *group, textLocation: bottomMiddle, name: RAID, members: [D3_02, D3_03, D3_04] }
+  CHALLENGE: { <<: *group, textLocation: bottomMiddle, name: RAID, members: [D4_16] }
+  JE: { <<: *group, textLocation: bottomMiddle, name: CHALLENGE, members: [D4_17] }
   
 connection: &connection
   color: "#A8A8AA"
   stroke: "#A8A8AA"
   strokeWidth: 3
 connections:
+  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_02"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_03"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_04"] }
   - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_05"] }
-  - { <<: *connection, endpoints: ["D3", "D3_06"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_06"] }
   - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_10"] }
-  - { <<: *connection, endpoints: ["D3", "D3_11"] }
-  - { <<: *connection, endpoints: ["D3", "D3_12"] }
-  - { <<: *connection, endpoints: ["D3", "D3_13"] }
-  - { <<: *connection, endpoints: ["D3", "D3_14"] }
-  - { <<: *connection, endpoints: ["D3", "D3_15"] }
-  - { <<: *connection, endpoints: ["D3", "D3_16"] }
-  - { <<: *connection, endpoints: ["D3", "D3_19"] }
-  - { <<: *connection, endpoints: ["D3", "D3_20"] }
-  - { <<: *connection, endpoints: ["D3", "D3_22"] }
-  - { <<: *connection, endpoints: ["D3", "D3_23"] }
+  - { <<: *connection, stroke: "yellow", endpoints: ["D3", "D3_11"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_12"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_13"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_14"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_15"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_16"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_19"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_20"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_22"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_23"] }
   - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_24"] }
-  - { <<: *connection, endpoints: ["D4", "D4_18"] }
-  - { <<: *connection, endpoints: ["D4", "D4_23"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_16"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_18"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_23"] }
+  - { <<: *connection, stroke: "yellow",endpoints: ["D4", "D4_17"] }
+  
   
