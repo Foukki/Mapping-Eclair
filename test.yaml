@@ -58,8 +58,8 @@ groups:
   PIXEL: { <<: *group, textLocation: topMiddle, name: PIXEL, members: [D4_18] }
   COULOIR: { <<: *group, textLocation: topMiddle, name: COULOIR, members: [D4_23] }
   RAID: { <<: *group, textLocation: bottomMiddle, name: RAID, members: [D3_02, D3_03, D3_04] }
-  CHALLENGE: { <<: *group, textLocation: bottomMiddle, name: RAID, members: [D4_16] }
-  JE: { <<: *group, textLocation: bottomMiddle, name: CHALLENGE, members: [D4_17] }
+  CHALLENGE: { <<: *group, textLocation: bottomMiddle, name: CHALLENGE, members: [D4_16] }
+  JE: { <<: *group, textLocation: bottomMiddle, name: JE, members: [D4_17] }
   
 connection: &connection
   color: "#A8A8AA"
