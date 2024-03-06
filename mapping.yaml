@@ -41,8 +41,6 @@ icons:
   D4_21: {<<: *azure, x: 7, y: 2, icon: "plugandplay"}
   D4_22: {<<: *azure, x: 7, y: 1, icon: "plugandplay"}
   D4_23: {<<: *azure, x: 7, y: 5, icon: "plugandplay"}
-  
-  D_i_1: {<<: *azure, x: 6, y: 7, icon: "plugandplay"}
 
 group: &group
   fill: "none"
@@ -59,7 +57,7 @@ groups:
   PERSPECTIVE: { <<: *group, textLocation: bottomMiddle, name: PERSPECTIVE, members: [D3_07, D4_22, D4_21] }
   EVENT: { <<: *group, textLocation: bottomMiddle, name: EVENT, members: [D3_20] }
   REUNION: { <<: *group, textLocation: topMiddle, name: REUNION, members: [D3_16] }
-  BDA: { <<: *group, textLocation: topMiddle, name: BDA, members: [D4_18, D_i_1] }
+  BDA: { <<: *group, textLocation: topMiddle, name: BDA, members: [D4_18] }
   COULOIR: { <<: *group, textLocation: topMiddle, name: COULOIR, members: [D4_23] }
   RAID: { <<: *group, textLocation: bottomMiddle, name: RAID, members: [D3_02, D3_03, D3_04] }
   CHALLENGE: { <<: *group, textLocation: bottomMiddle, name: CHALLENGE, members: [D4_16] }
