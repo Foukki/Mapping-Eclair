@@ -70,14 +70,14 @@ connection: &connection
   stroke: "#A8A8AA"
   strokeWidth: 3
 connections:
-  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_02"] }
+  - { <<: *connection, stroke: "gray", endpoints: ["D3", "D3_02"] }
   - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_03"] }
   - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_04"] }
-  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_05"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_05"] }
   - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_06"] }
   - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_07"] }
-  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_10"] }
-  - { <<: *connection, stroke: "yellow", endpoints: ["D3", "D3_11"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_10"] }
+  - { <<: *connection, stroke: "green", endpoints: ["D3", "D3_11"] }
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_12"] }
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_13"] }
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_14"] }
@@ -86,11 +86,11 @@ connections:
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_19"] }
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_20"] }
   - { <<: *connection, stroke: "green",endpoints: ["D3", "D3_23"] }
-  - { <<: *connection, stroke: "red", endpoints: ["D3", "D3_24"] }
+  - { <<: *connection, stroke: "gray", endpoints: ["D3", "D3_24"] }
   - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_16"] }
   - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_18"] }
   - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_23"] }
-  - { <<: *connection, stroke: "yellow",endpoints: ["D4", "D4_17"] }
+  - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_17"] }
   - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_21"] }
   - { <<: *connection, stroke: "green",endpoints: ["D4", "D4_22"] }
   
